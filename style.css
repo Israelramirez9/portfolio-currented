@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+/*General Styles*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.dark-section {
+    background-color: #1b1b32;
+    color: white;
+}
+
+.title-section {
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+.subtitle-section{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+.text-section{
+    font-size: 1.2rem;
+}
+/* Navbar*/
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*Hero Section*/
+
+
+.perfil-photo-hero {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    object-fit: contain;
+}
+
+.main-hero {
+    padding: 3rem;
+}
+
+.main-hero h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+/*ABOUT ME section*/
+.about-me {
+    height: 500px;
+    padding: 10px;
+}
+
+.about-me-container {
+    width: 600px;
+    text-align: center;
+}
+.text-section{
+    width: 100%;
+}
+
+/* Responsive*/
+@media screen and (max-width:700px) {
+    .navbar-brand {
+        display: none;
+    }
+
+}
