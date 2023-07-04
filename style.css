@@ -3,6 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 /*General Styles*/
+html {
+    scroll-behavior: smooth;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main > div{
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+}
 section {
     display: flex;
     flex-direction: column;
@@ -58,8 +73,9 @@ h1 {
 /* Navbar*/
 .navbar {
     padding: 2rem;
-    background-color: #f5f6f7;
-
+    background-color: #d1d4d6;
+    
+    top: 0;
 }
 
 .navbar-collapse {
@@ -107,6 +123,47 @@ h1 {
 .text-section {
     padding: 1rem;
 }
+.img-container img{
+    width: 200px;
+    height: 200px;   
+    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
+    border-radius: 10px;  
+}
+
+/*SKILLS SECTION*/
+.skills-section{
+    padding: 3rem;
+}
+.container-myskills {
+    width: 80%;        
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#item6 {
+    grid-area: 2/2/4/4;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item img {
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.logo img {
+    width: 70%;
+}
 
 /*PROJECTS*/
 
@@ -128,6 +185,10 @@ h1 {
 .projects-container {
     padding-top: 60px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay {
@@ -211,9 +272,11 @@ h1 {
     background-color: white;
     color: black;
 }
-.contact button:hover i{
+
+.contact button:hover i {
     color: black;
 }
+
 .contact button i {
     color: #f5f6f7;
     font-size: 1.3rem;
@@ -260,25 +323,51 @@ footer {
 .social-networks-icons a:hover {
     background-color: black;
 }
-.social-networks-icons a:hover i{
+
+.social-networks-icons a:hover i {
     color: #f5f6f7;
 }
-.copyright{
+
+.copyright {
     font-size: 1rem;
     color: #aeaeae;
     padding: 20px;
 }
-.copyright a{
+
+.copyright a {
     text-decoration: none;
-    color:#aeaeae;
+    color: #aeaeae;
 }
+
+
+  @media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #button {
+      margin: 30px;
+    }
+  }
+  .content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+  }
+  .content h3 {
+    font-style: italic;
+    color: #96a2a7;
+  }
 /* Responsive*/
 @media screen and (max-width:700px) {
     .navbar-brand {
         display: none;
     }
 
+    .item {
+        height: 5rem;
+    }
 }
+
 
 @media screen and (max-width:400px) {
     .overlay p {
@@ -291,5 +380,10 @@ footer {
 
     .btn-light {
         font-size: 0.5rem;
+    }
+}
+@media screen and (min-width:1000px) {
+    .container-myskills{
+        width: 50%;
     }
 }
