@@ -184,7 +184,7 @@ h1 {
     display: block;
     transition: all 0.2s ease;
     object-fit: contain;
-
+    cursor: pointer;
 }
 
 .projects-container {
@@ -204,6 +204,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    display: none;
 
 }
 
@@ -219,13 +220,13 @@ h1 {
 
 }
 
-.project:hover img {
+/* .project:hover img {
     opacity: 0.2;
-}
+} */
 
-.project:hover .overlay {
+/* .project:hover .overlay {
     opacity: 1;
-}
+} */
 
 .overlay .icon-container {
     display: flex;
